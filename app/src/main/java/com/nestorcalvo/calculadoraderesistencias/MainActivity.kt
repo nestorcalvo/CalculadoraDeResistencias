@@ -1,11 +1,16 @@
 package com.nestorcalvo.calculadoraderesistencias
 
+import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
+import android.graphics.Color.parseColor
+import android.graphics.drawable.ColorDrawable
+
+
 
 class MainActivity : AppCompatActivity() {
     private var band1 = 1
@@ -19,8 +24,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
+        supportActionBar?.setDisplayShowHomeEnabled(true);
+        supportActionBar?.setLogo(R.mipmap.ic_launcher_round);
+        supportActionBar?.setDisplayUseLogoEnabled(true);
     }
 
     fun actualizar(view: View) {
