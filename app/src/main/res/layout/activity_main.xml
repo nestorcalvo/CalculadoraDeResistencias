@@ -10,7 +10,7 @@
             android:layout_height="wrap_content"
             android:text="@string/Titulo"
             android:gravity="center_horizontal"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textColor="@color/black"
     />
     <TextView
@@ -18,15 +18,55 @@
             android:layout_height="wrap_content"
 
             android:gravity="center_horizontal"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textColor="@color/black"
             android:id="@+id/tvResultado"
     />
-    <ImageView
+    <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/resistencia"
-    />
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="92dp"
+                android:src="@mipmap/resistencia"
+        />
+        <LinearLayout
+                android:layout_width="13dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="138dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/llband1"
+                android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="13dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="161dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/llband2"
+                android:orientation="horizontal">
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="13dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="184dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/llband3"
+                android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="13dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="242dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/lltolband"
+                android:orientation="horizontal">
+
+        </LinearLayout>
+    </FrameLayout>
     <LinearLayout android:layout_width="wrap_content"
                   android:layout_height="wrap_content">
         <TextView
@@ -432,8 +472,6 @@
         />
 
     </LinearLayout>
-
-
 
 
 </LinearLayout>
