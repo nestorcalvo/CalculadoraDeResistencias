@@ -9,6 +9,10 @@ import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import android.graphics.Color.parseColor
 import android.graphics.drawable.ColorDrawable
+import android.R.attr.button
+
+
+
 
 
 
@@ -123,10 +127,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
         resultado = ((band1.toDouble() * 10 + band2.toDouble()) * multiplier)
-        //var color = view.background
-        //llband1.background = color
 
-        tvResultado.text = ("$resultado Ohms ±$tolerancy%")
+        val buttonColor = view.background as ColorDrawable
+        llband1.setBackgroundColor(buttonColor.color)
+
+        tvResultado.text = ("$resultado Ω ±$tolerancy%")
 
     }
 
