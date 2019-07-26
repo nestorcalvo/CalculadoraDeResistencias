@@ -5,4 +5,5 @@
     <string name="banda_2">Banda 2</string>
     <string name="banda_3">Banda 3</string>
     <string name="tolerancia">Tolerancia</string>
+    <string name="app_name_short">Resistor Calc.</string>
 </resources>
