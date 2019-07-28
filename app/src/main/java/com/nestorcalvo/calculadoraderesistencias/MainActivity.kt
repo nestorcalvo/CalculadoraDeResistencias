@@ -129,7 +129,12 @@ class MainActivity : AppCompatActivity() {
         resultado = ((band1.toDouble() * 10 + band2.toDouble()) * multiplier)
 
         val buttonColor = view.background as ColorDrawable
-        llband1.setBackgroundColor(buttonColor.color)
+        when {
+            view.id.toString().contains("1") -> llband1.setBackgroundColor(buttonColor.color)
+            view.id.toString().contains("2") -> llband2.setBackgroundColor(buttonColor.color)
+            view.id.toString().contains("3") -> llband3.setBackgroundColor(buttonColor.color)
+            view.id.toString().contains("tol") -> lltolband.setBackgroundColor(buttonColor.color)
+        }
 
         tvResultado.text = ("$resultado Ω ±$tolerancy%")
 
