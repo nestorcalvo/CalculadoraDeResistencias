@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/gradient"
+
         android:padding="10dp">
     <FrameLayout
             android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="92dp"
-                android:src="@mipmap/resistencia"
+
         />
         <LinearLayout
                 android:layout_width="15dp"
@@ -21,6 +21,7 @@
                 android:layout_marginStart="138dp"
                 android:layout_marginTop="12dp"
                 android:id="@+id/llband1"
+                android:background="@color/saddlebrown"
                 android:orientation="horizontal">
 
         </LinearLayout>
@@ -30,6 +31,7 @@
                 android:layout_marginStart="161dp"
                 android:layout_marginTop="12dp"
                 android:id="@+id/llband2"
+                android:background="@color/black"
                 android:orientation="horizontal">
         </LinearLayout>
         <LinearLayout
@@ -38,6 +40,7 @@
                 android:layout_marginStart="184dp"
                 android:layout_marginTop="12dp"
                 android:id="@+id/llband3"
+                android:background="@color/black"
                 android:orientation="horizontal">
 
         </LinearLayout>
@@ -103,6 +106,8 @@
                 android:background="@color/black"
                 android:id="@+id/btblack_2band"
                 android:onClick="actualizar"
+                android:text="@string/banda2"
+                android:textSize="0sp"
 
         />
         <Button
@@ -112,6 +117,8 @@
                 android:background="@color/black"
                 android:id="@+id/btblack_3band"
                 android:onClick="actualizar"
+                android:text="@string/banda3"
+                android:textSize="0sp"
         />
 
     </LinearLayout>
@@ -125,8 +132,11 @@
                 android:layout_marginStart="20dp"
                 android:background="@color/saddlebrown"
                 android:id="@+id/btbrown_1band"
+                android:text="@string/banda1"
+                android:textSize="0sp"
+
                 android:onClick="actualizar"
-        />
+                tools:ignore="HardcodedText"/>
         <Button
                 android:layout_width="60dp"
                 android:layout_height="20dp"
@@ -134,6 +144,8 @@
                 android:background="@color/saddlebrown"
                 android:id="@+id/btbrown_2band"
                 android:onClick="actualizar"
+                android:text="@string/banda2"
+                android:textSize="0sp"
         />
         <Button
                 android:layout_width="60dp"
@@ -142,6 +154,8 @@
                 android:background="@color/saddlebrown"
                 android:id="@+id/btbrown_3band"
                 android:onClick="actualizar"
+                android:text="@string/banda3"
+                android:textSize="0sp"
         />
         <Button
                 android:layout_width="60dp"
@@ -150,6 +164,8 @@
                 android:background="@color/saddlebrown"
                 android:id="@+id/btbrown_tolband"
                 android:onClick="actualizar"
+                android:text="@string/bandatol"
+                android:textSize="0sp"
 
         />
     </LinearLayout>
@@ -164,6 +180,8 @@
                 android:background="@color/red"
                 android:id="@+id/btred_1band"
                 android:onClick="actualizar"
+                android:text="@string/banda1"
+                android:textSize="0sp"
         />
         <Button
                 android:layout_width="60dp"
@@ -172,6 +190,8 @@
                 android:background="@color/red"
                 android:id="@+id/btred_2band"
                 android:onClick="actualizar"
+                android:text="@string/banda2"
+                android:textSize="0sp"
 
         />
         <Button
@@ -181,6 +201,9 @@
                 android:background="@color/red"
                 android:id="@+id/btred_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
+
         />
         <Button
                 android:layout_width="60dp"
@@ -189,6 +212,8 @@
                 android:background="@color/red"
                 android:id="@+id/btred_tolband"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/bandatol"
         />
     </LinearLayout>
     <LinearLayout
@@ -202,6 +227,8 @@
                 android:background="@color/orangered"
                 android:id="@+id/btorange_1band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda1"
 
         />
         <Button
@@ -211,6 +238,8 @@
                 android:background="@color/orangered"
                 android:id="@+id/btorange_2band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda2"
         />
         <Button
                 android:layout_width="60dp"
@@ -219,6 +248,8 @@
                 android:background="@color/orangered"
                 android:id="@+id/btorange_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
         />
 
     </LinearLayout>
@@ -233,6 +264,8 @@
                 android:background="@color/yellow"
                 android:id="@+id/btyellow_1band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda1"
 
         />
         <Button
@@ -242,6 +275,8 @@
                 android:background="@color/yellow"
                 android:id="@+id/btyellow_2band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda2"
         />
         <Button
                 android:layout_width="60dp"
@@ -250,6 +285,8 @@
                 android:background="@color/yellow"
                 android:id="@+id/btyellow_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
         />
 
     </LinearLayout>
@@ -264,6 +301,8 @@
                 android:background="@color/limegreen"
                 android:id="@+id/btgreen_1band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda1"
 
         />
         <Button
@@ -273,6 +312,8 @@
                 android:background="@color/limegreen"
                 android:id="@+id/btgreen_2band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda2"
         />
         <Button
                 android:layout_width="60dp"
@@ -281,6 +322,8 @@
                 android:background="@color/limegreen"
                 android:id="@+id/btgreen_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
 
         />
         <Button
@@ -290,6 +333,8 @@
                 android:background="@color/limegreen"
                 android:id="@+id/btgreen_tolband"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/bandatol"
         />
     </LinearLayout>
     <LinearLayout
@@ -303,6 +348,8 @@
                 android:background="@color/midnightblue"
                 android:id="@+id/btblue_1band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda1"
 
         />
         <Button
@@ -312,6 +359,8 @@
                 android:background="@color/midnightblue"
                 android:id="@+id/btblue_2band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda2"
 
         />
         <Button
@@ -321,6 +370,8 @@
                 android:background="@color/midnightblue"
                 android:id="@+id/btblue_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
         />
 
     </LinearLayout>
@@ -335,6 +386,8 @@
                 android:background="@color/purple"
                 android:id="@+id/btpurple_1band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda1"
 
         />
         <Button
@@ -344,6 +397,8 @@
                 android:background="@color/purple"
                 android:id="@+id/btpurple_2band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda2"
 
         />
         <Button
@@ -353,6 +408,8 @@
                 android:background="@color/purple"
                 android:id="@+id/btpurple_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
         />
 
     </LinearLayout>
@@ -367,6 +424,8 @@
                 android:background="@color/gray"
                 android:id="@+id/btgray_1band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda1"
 
         />
         <Button
@@ -376,6 +435,8 @@
                 android:background="@color/gray"
                 android:id="@+id/btgray_2band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda2"
         />
         <Button
                 android:layout_width="60dp"
@@ -384,6 +445,8 @@
                 android:background="@color/gray"
                 android:id="@+id/btgray_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
         />
 
     </LinearLayout>
@@ -398,6 +461,8 @@
                 android:background="@color/beige"
                 android:id="@+id/btwhite_1band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda1"
 
         />
         <Button
@@ -407,6 +472,8 @@
                 android:background="@color/beige"
                 android:id="@+id/btwhite_2band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda2"
         />
         <Button
                 android:layout_width="60dp"
@@ -415,6 +482,8 @@
                 android:background="@color/beige"
                 android:id="@+id/btwhite_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
         />
 
     </LinearLayout>
@@ -430,6 +499,8 @@
                 android:background="@color/goldenrod"
                 android:id="@+id/btgold_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
 
         />
         <Button
@@ -439,6 +510,8 @@
                 android:background="@color/goldenrod"
                 android:id="@+id/btgold_tolband"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/bandatol"
         />
     </LinearLayout>
     <LinearLayout
@@ -453,6 +526,8 @@
                 android:background="@color/silver"
                 android:id="@+id/btsilver_3band"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/banda3"
         />
         <Button
                 android:layout_width="60dp"
@@ -461,6 +536,8 @@
                 android:background="@color/silver"
                 android:id="@+id/btsilver_tolband"
                 android:onClick="actualizar"
+                android:textSize="0sp"
+                android:text="@string/bandatol"
 
         />
 

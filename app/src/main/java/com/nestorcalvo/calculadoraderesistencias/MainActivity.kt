@@ -10,10 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import android.graphics.Color.parseColor
 import android.graphics.drawable.ColorDrawable
 import android.R.attr.button
-
-
-
-
+import android.annotation.SuppressLint
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,17 +19,24 @@ class MainActivity : AppCompatActivity() {
     private var multiplier: Double = 1.0
     private var tolerancy = 0.0
     private var resultado: Double = 0.0
+    private var mostrar:String = ""
+    private var first = true
 
 
 
+    @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.setDisplayShowHomeEnabled(true);
         supportActionBar?.setLogo(R.mipmap.ic_launcher_round);
         supportActionBar?.setDisplayUseLogoEnabled(true);
+
+        resultado = ((band1.toDouble() * 10 + band2.toDouble()) * multiplier)
+        tvResultado.text = ("$resultado Ω ±$tolerancy%")
     }
 
+    @SuppressLint("ResourceAsColor")
     fun actualizar(view: View) {
         if (view is Button) {
 
@@ -125,18 +129,20 @@ class MainActivity : AppCompatActivity() {
 
 
             }
-        }
-        resultado = ((band1.toDouble() * 10 + band2.toDouble()) * multiplier)
 
-        val buttonColor = view.background as ColorDrawable
-        when {
-            view.id.toString().contains("1") -> llband1.setBackgroundColor(buttonColor.color)
-            view.id.toString().contains("2") -> llband2.setBackgroundColor(buttonColor.color)
-            view.id.toString().contains("3") -> llband3.setBackgroundColor(buttonColor.color)
-            view.id.toString().contains("tol") -> lltolband.setBackgroundColor(buttonColor.color)
-        }
+            resultado = ((band1.toDouble() * 10 + band2.toDouble()) * multiplier)
 
-        tvResultado.text = ("$resultado Ω ±$tolerancy%")
+
+            val buttonColor = view.background as ColorDrawable
+            when {
+                view.text.toString().contains("1") -> llband1.setBackgroundColor(buttonColor.color)
+                view.text.toString().contains("2") -> llband2.setBackgroundColor(buttonColor.color)
+                view.text.toString().contains("3") -> llband3.setBackgroundColor(buttonColor.color)
+                view.text.toString().contains("tol") -> lltolband.setBackgroundColor(buttonColor.color)
+            }
+
+            tvResultado.text = ("$resultado Ω ±$tolerancy% $mostrar")
+        }
 
     }
 
