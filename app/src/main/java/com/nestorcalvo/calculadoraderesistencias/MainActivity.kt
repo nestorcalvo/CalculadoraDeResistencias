@@ -13,6 +13,7 @@ import android.R.attr.button
 import android.annotation.SuppressLint
 
 
+
 class MainActivity : AppCompatActivity() {
     private var band1 = 1
     private var band2 = 0
